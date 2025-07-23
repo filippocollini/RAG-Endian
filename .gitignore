@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+rag-env/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+
+# Local vector store database (ChromaDB)
+vector_store/
+
+# SQLite DBs and logs
+*.sqlite3
+*.log
+
+# VSCode settings
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Jupyter and Streamlit caches
+.ipynb_checkpoints/
+.streamlit/
+
+# Pip wheels
+*.whl
+
+# PDF previews or thumbnails (optional)
+*.pdf.png

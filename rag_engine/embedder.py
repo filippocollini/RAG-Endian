@@ -11,7 +11,10 @@ collection = client.get_or_create_collection(
         api_key=os.getenv("OPENAI_API_KEY"),
         model_name=os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
     )
-)
+)    
+
+def clear_collection():
+    collection.clear()
 
 def add_documents(docs, metadatas):
     collection.add(documents=docs, metadatas=metadatas, ids=[str(i) for i in range(len(docs))])
