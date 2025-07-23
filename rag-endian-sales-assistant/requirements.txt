@@ -1,5 +1,0 @@
-streamlit
-openai
-chromadb
-unstructured
-python-dotenv
