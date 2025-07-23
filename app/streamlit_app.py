@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the parent directory (project root) to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 from rag_engine.rag_chain import generate_answer
 

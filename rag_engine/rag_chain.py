@@ -1,4 +1,5 @@
 import openai
+from openai import OpenAI
 import os
 from rag_engine.retriever import retrieve_relevant_chunks
 
@@ -8,7 +9,9 @@ def generate_answer(query):
 
     system_prompt = open("app/prompts/system_prompt.txt").read()
 
-    response = openai.ChatCompletion.create(
+    client = OpenAI()
+
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[
             {"role": "system", "content": system_prompt},
