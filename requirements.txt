@@ -1,5 +1,6 @@
 streamlit
 openai
 chromadb
-unstructured
+unstructured[pdf]
 python-dotenv
+pdfminer.six
